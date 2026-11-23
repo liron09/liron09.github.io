@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="canonical" href="https://liron09.github.io/">
+<title>Liron Meoded — Cyber Threat Intelligence & SOC Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0b0f14; --panel:#121821; --line:#1f2a36; --text:#e6edf3; --muted:#8b98a5;
+    --accent:#3ddc97; --accent2:#5aa9ff; --tag:#18232f;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif;line-height:1.6}
+  a{color:var(--accent2);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .wrap{max-width:920px;margin:0 auto;padding:0 24px}
+  .mono{font-family:"JetBrains Mono",monospace}
+
+  header{padding:72px 0 48px;border-bottom:1px solid var(--line)}
+  .kicker{color:var(--accent);font-size:13px;letter-spacing:.08em;margin-bottom:12px}
+  h1{font-size:44px;line-height:1.1;font-weight:700;margin-bottom:12px}
+  .role{font-size:20px;color:var(--muted);margin-bottom:24px}
+  .summary{max-width:680px;font-size:16px;margin-bottom:28px}
+  .links{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;border:1px solid var(--line);background:var(--panel);padding:8px 14px;border-radius:8px;font-size:14px;color:var(--text)}
+  .btn.primary{background:var(--accent);color:#06130d;border-color:var(--accent);font-weight:600}
+  .btn:hover{text-decoration:none;border-color:var(--accent2)}
+
+  section{padding:48px 0;border-bottom:1px solid var(--line)}
+  h2{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:24px}
+
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:24px;margin-bottom:16px}
+  .card.featured{border-color:var(--accent)}
+  .badge{display:inline-block;font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:#06130d;background:var(--accent);padding:3px 8px;border-radius:4px;margin-bottom:10px}
+  .card h3{font-size:19px;margin-bottom:6px}
+  .meta{font-size:13px;color:var(--muted);margin-bottom:12px}
+  .card p{font-size:15px;margin-bottom:10px}
+  .card ul{margin:0 0 12px 18px;font-size:15px}
+  .card li{margin-bottom:4px}
+  .tags{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0}
+  .tag{font-size:12px;background:var(--tag);color:var(--muted);padding:3px 9px;border-radius:999px;border:1px solid var(--line)}
+  .card .cta{font-size:14px;font-weight:600}
+  .todo{color:#f5c26b;font-style:italic}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+  .skill h4{font-size:14px;margin-bottom:8px}
+  .skill p{font-size:14px;color:var(--muted)}
+
+  .timeline .item{display:grid;grid-template-columns:140px 1fr;gap:16px;margin-bottom:18px}
+  .timeline .when{color:var(--muted);font-size:13px}
+  .timeline .what strong{display:block}
+  .timeline .what span{color:var(--muted);font-size:14px}
+
+  footer{padding:40px 0 64px;color:var(--muted);font-size:14px}
+  @media (max-width:600px){
+    h1{font-size:34px}
+    .timeline .item{grid-template-columns:1fr;gap:2px}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="kicker mono">&gt; whoami</div>
+    <h1>Liron Meoded</h1>
+    <div class="role">Junior CTI / OSINT &amp; SOC Analyst</div>
+    <p class="summary">
+      M.Sc. in Computational Biology &amp; Biochemistry with a background in pharma clinical research,
+      now focused on cyber threat intelligence and security operations. I bring an analyst's rigor
+      from scientific research to investigations, and a unique angle on healthcare and medical-device threats.
+    </p>
+    <div class="links">
+      <a class="btn primary" href="Liron_Meoded_CV.pdf" target="_blank" rel="noopener">Download CV</a>
+      <a class="btn" href="https://www.linkedin.com/in/liron-meoded/" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="https://github.com/liron09" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn mono" href="mailto:lironmeoded09@gmail.com">lironmeoded09@gmail.com</a>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h2>Featured Projects</h2>
+
+    <div class="card featured">
+      <span class="badge">Featured</span>
+      <h3>Threat Intelligence: Remotely Exploitable Medical Devices</h3>
+      <div class="meta">Final Project · OSINT Analyst Program (InsAIghts Academy by Penlink, with Google &amp; Reichman) · April 2026</div>
+      <p>A decade-long (2015–2025) threat intelligence investigation into life-critical connected devices (pacemakers, insulin pumps, patient monitors and infusion systems) across 5 manufacturers, using 7 OSINT research layers plus a threat-actor track.</p>
+      <ul>
+        <li>Every device category examined was found remotely exploitable, with CVSS scores up to 9.3–10.0</li>
+        <li>Vendor responses ranged from proactive (J&amp;J warned 114,000 patients) to negligent (Contec: no response for 14+ months after a CISA/FDA backdoor advisory)</li>
+        <li>Investigated Contec CMS8000's hard-coded IP: WHOIS/DNS, Wayback history and geolocation to a university network in Wuhan</li>
+        <li>Delivered an entity network, risk matrix, threat-actor matrix and recommendations for hospitals, vendors and regulators</li>
+      </ul>
+      <div class="tags"><span class="tag">OSINT</span><span class="tag">CTI</span><span class="tag">Healthcare</span><span class="tag">IoMT</span><span class="tag">Vulnerability Research</span></div>
+      <a class="cta" href="https://github.com/liron09/medical-devices-osint">Read the full report →</a>
+    </div>
+
+    <div class="card">
+      <h3>Black Friday Scam Store Investigation</h3>
+      <div class="meta">OSINT Analyst Program</div>
+      <p>Assessed whether an online store was legitimate. A stolen product image, an impossible price, a domain registered 3 weeks earlier behind a privacy proxy, a residential "business" address and zero reviews led to a very-high-risk verdict.</p>
+      <div class="tags"><span class="tag">Fraud Detection</span><span class="tag">WHOIS</span><span class="tag">Reverse Image Search</span><span class="tag">Google Dorking</span></div>
+      <a class="cta" href="https://github.com/liron09/security-labs/blob/main/osint-exercises/01-black-friday-scam-site.md">Read case study →</a>
+    </div>
+
+    <div class="card">
+      <h3>Intelligence Profile &amp; OSINT Case Studies</h3>
+      <div class="meta">OSINT Analyst Program</div>
+      <p>Public-figure intelligence profile (timeline, network map, disinformation risk), IP infrastructure and reputation analysis, viral-image verification, EXIF-based geolocation and a social-media OPSEC threat model.</p>
+      <div class="tags"><span class="tag">Entity Profiling</span><span class="tag">GEOINT</span><span class="tag">Media Verification</span><span class="tag">OPSEC</span></div>
+      <a class="cta" href="https://github.com/liron09/security-labs">View all case studies →</a>
+    </div>
+
+    <div class="card">
+      <h3>Hack The Box: Lame</h3>
+      <div class="meta">Offensive practice · Linux · Easy</div>
+      <p>Full compromise to root through Samba command injection (CVE-2007-2447), with lessons for defenders on version exposure and service privileges.</p>
+      <div class="tags"><span class="tag">Enumeration</span><span class="tag">Exploitation</span><span class="tag">Linux</span></div>
+      <a class="cta" href="https://github.com/liron09/htb-writeups/blob/main/Lame/README.md">Read write-up →</a>
+    </div>
+
+    <div class="card">
+      <h3>Infrastructure &amp; CTI Labs</h3>
+      <div class="meta">Cybersecurity Training Program</div>
+      <p>Active Directory domain lab (SMB permissions, RDP via GPO, tested from Kali), an OpenCTI threat intelligence platform deployed with Docker, and multi-router network labs in Packet Tracer.</p>
+      <div class="tags"><span class="tag">Active Directory</span><span class="tag">OpenCTI</span><span class="tag">Docker</span><span class="tag">Networking</span></div>
+      <a class="cta" href="https://github.com/liron09/security-labs">View labs →</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Skills</h2>
+    <div class="grid">
+      <div class="card skill"><h4>Threat Intelligence &amp; OSINT</h4><p>Source collection and validation, threat actor profiling, MITRE ATT&amp;CK, intelligence reporting</p></div>
+      <div class="card skill"><h4>SOC &amp; Incident Response</h4><p>Alert triage, log analysis, SIEM, incident timelines, containment</p></div>
+      <div class="card skill"><h4>Technical</h4><p>Linux, Python for Security, Web Pentesting fundamentals, networking</p></div>
+      <div class="card skill"><h4>Domain Edge</h4><p>Pharma &amp; clinical research (MSD, Sanofi), GCP / CRA certified, healthcare regulatory context</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Experience</h2>
+    <div class="timeline">
+      <div class="item"><div class="when mono">2025 – 2026</div><div class="what"><strong>MSD (Merck Sharp &amp; Dohme) · Clinical Research Intern, Finance</strong><span>Clinical trial budget tracking, data validation and compliance documentation</span></div></div>
+      <div class="item"><div class="when mono">2023 – 2024</div><div class="what"><strong>Sanofi · Monitoring, Student Role</strong><span>Process monitoring, quality checks and deviation identification</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Training &amp; Education</h2>
+    <div class="timeline">
+      <div class="item"><div class="when mono">2026 – Present</div><div class="what"><strong>Hands-on Cybersecurity Program</strong><span>Ramat Gan · Networking · Linux · Windows Server · Python for Security · SOC · Incident Response</span></div></div>
+      <div class="item"><div class="when mono">2025 – 2026</div><div class="what"><strong>OSINT Analyst Program</strong><span>InsAIghts Academy by Penlink · Google &amp; Reichman</span></div></div>
+      <div class="item"><div class="when mono">2022 – 2026</div><div class="what"><strong>M.Sc. Computational Biology &amp; Biochemistry</strong><span>Tel Aviv University</span></div></div>
+      <div class="item"><div class="when mono">2019 – 2022</div><div class="what"><strong>B.Sc. Molecular Biology</strong><span>Ariel University</span></div></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    Open to junior SOC Analyst and CTI / OSINT Analyst roles · Gush Dan, Israel · Shift work OK
+  </div>
+</footer>
+
+</body>
+</html>
